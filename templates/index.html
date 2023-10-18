@@ -1,8 +1,15 @@
-<form action="buscar" method="POST">
-    <input placeholder="Buscar Pokemon" name="nome" type="text">
-    <button type="submit" name="buscar">Buscar</button>
-    <img src="" alt=""><br>
-    <h3>{{nome}}</h3>
-    <img src="{{foto}}">
-    
-</form>
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/style.css') }}"/>
+</head>
+<body>
+    <form action="buscar" method="POST">
+        <input placeholder="Buscar Pokemon" name="nome" id="nome" type="text">
+        <button type="submit" name="buscar">Buscar</button>
+        <img src="" alt=""><br>
+        <h3 class="sub-heading">{{nome}}</h3>
+        <img src="{{foto}}">    
+    </form>
+</body>
+</html>
