@@ -7,9 +7,10 @@
     <form action="buscar" method="POST">
         <input placeholder="Buscar Pokemon" name="nome" id="nome" type="text">
         <button type="submit" name="buscar">Buscar</button>
-        <img src="" alt=""><br>
-        <h3 class="sub-heading">{{nome}}</h3>
-        <img src="{{foto}}">    
+        <br>
+        <img src="{{foto}}" onerror="this.style.display = 'none'">    
+        <h3 class="sub-heading">Codigo: {{codigo}}</h3>
+        <h3 class="sub-heading">Nome: {{nome}}</h3>        
     </form>
 </body>
 </html>
